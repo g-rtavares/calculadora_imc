@@ -17,10 +17,8 @@ class _HomeState extends State<Home> {
   TextEditingController _weightController = TextEditingController();
   TextEditingController _heightController = TextEditingController();
   GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-
   Text _result;
   String _sexo = "MASCULINO";
-
   SingingCharacter _character = SingingCharacter.masculino;
 
   @override
