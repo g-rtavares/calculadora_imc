@@ -4,7 +4,7 @@ import 'pessoa.dart';
 void main() => runApp(MaterialApp(
       home: Home(),
       debugShowCheckedModeBanner: false,
-    ));
+));
 
 class Home extends StatefulWidget {
   @override
@@ -50,8 +50,8 @@ class _HomeState extends State<Home> {
     return Scaffold(
         appBar: AppBar(
           title: Text('Calculadora de IMC'),
-          backgroundColor: Colors.blue,
-          actions: <Widget>[
+          backgroundColor: Colors.deepPurple,
+             actions: <Widget>[
             IconButton(
               icon: Icon(Icons.refresh),
               onPressed: () {
@@ -60,7 +60,7 @@ class _HomeState extends State<Home> {
             )
           ],
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.deepPurple[100],
         body: SingleChildScrollView(
             padding: EdgeInsets.all(20.0),
             child: Form(
@@ -122,7 +122,7 @@ class _HomeState extends State<Home> {
                         child: Container(
                             height: 50,
                             child: RaisedButton(
-                              color: Colors.blueAccent,
+                              color: Colors.deepPurple,
                               onPressed: () {
                                 if (_formKey.currentState.validate()) {
                                   calculateImc();
